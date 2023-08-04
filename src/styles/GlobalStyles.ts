@@ -29,6 +29,7 @@ export default createGlobalStyle`
     --gray-light: #b5bac1;
     --gray-hover: #35373c;
     --gray-text: #949ba4;
+    --gray-scroll: #1a1b1e;
 
     --blue: #5865f2;
     --blue-mention: #4a4b6f;
