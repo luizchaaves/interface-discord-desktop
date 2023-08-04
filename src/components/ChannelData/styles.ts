@@ -12,7 +12,7 @@ export const Container = styled.div`
 
 export const Wrapper = styled.div`
   padding-bottom: 20px;
-  max-height: calc(100vh - 46px 68px - 8px);
+  max-height: calc(100vh - 46px - 68px - 8px);
   overflow-y: auto;
   height: 100%;
 

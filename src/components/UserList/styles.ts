@@ -76,12 +76,30 @@ export const User = styled.div`
   }
 `;
 
-export const Avatar = styled.div`
+interface PropsStyled {
+  isonline?: number;
+}
+
+export const Avatar = styled.div<PropsStyled>`
   flex-shrink: 0;
   width: 32px;
   height: 32px;
   background-color: var(--gray-light);
   border-radius: 50%;
+  position: relative;
+
+  &::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -3px;
+    right: -2px;
+    background-color: ${(props) =>
+      props.isonline ? 'var(--green)' : 'var(--red)'};
+    border: 3px solid var(--gray-secondary);
+  }
 
   &.bot {
     background: var(--blue);
