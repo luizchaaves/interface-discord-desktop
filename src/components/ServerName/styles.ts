@@ -20,8 +20,8 @@ export const Container = styled.div`
 `;
 
 export const Title = styled.h1`
-  font-size: 16px;
-  font-weight: bold;
+  font-size: 14px;
+  font-weight: 500;
   color: var(--white);
 `;
 

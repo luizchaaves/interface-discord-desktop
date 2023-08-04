@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { Hashtag } from 'styled-icons/heroicons-outline';
+import { Hash } from 'styled-icons/boxicons-regular';
 import { VolumeFull } from 'styled-icons/boxicons-solid';
 import { ChatLeftFill } from 'styled-icons/bootstrap';
 import { PersonAdd, Settings } from 'styled-icons/material';
@@ -48,7 +48,7 @@ export const Container = styled.div`
   }
 `;
 
-export const HashtagIcon = styled(Hashtag)`
+export const HashtagIcon = styled(Hash)`
   width: 20px;
   height: 20px;
   color: var(--gray-light);
