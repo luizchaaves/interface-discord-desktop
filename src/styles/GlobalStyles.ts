@@ -30,10 +30,12 @@ export default createGlobalStyle`
     --gray-hover: #35373c;
     --gray-text: #949ba4;
     --gray-scroll: #1a1b1e;
+    --gray-input-chat: #393c41;
 
     --blue: #5865f2;
     --blue-mention: #4a4b6f;
-    --blue-link: #c9cdf6;
+    --blue-text-mention: #c9cdfb;
+    --blue-link: #00a8fc;
 
     --yellow-primary: #f0b132;
     --yellow-secondary: #454037;
