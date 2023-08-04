@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { Button, DiscordIcon } from './styles';
+import CustomStyleSheetManager from '../CustomStyleSheetManager';
 
 interface Props {
   name: string;
@@ -18,15 +19,17 @@ const ServerButton: React.FC<Props> = ({
   mentions,
 }) => {
   return (
-    <Button
-      aria-label={name}
-      selected={selected}
-      ishome={ishome}
-      hasnotifications={hasnotifications}
-      mentions={mentions}
-    >
-      {ishome && <DiscordIcon />}
-    </Button>
+    <CustomStyleSheetManager>
+      <Button
+        aria-label={name}
+        selected={selected}
+        ishome={ishome}
+        hasnotifications={hasnotifications}
+        mentions={mentions}
+      >
+        {ishome && <DiscordIcon />}
+      </Button>
+    </CustomStyleSheetManager>
   );
 };
 
