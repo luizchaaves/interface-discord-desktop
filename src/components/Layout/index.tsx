@@ -6,6 +6,7 @@ import ServerList from '../ServerList';
 import ServerName from '../ServerName';
 import ChannelList from '../ChannelList';
 import UserInfo from '../UserInfo';
+import ChannelInfo from '../ChannelInfo';
 
 const Layout: React.FC = () => {
   return (
@@ -14,6 +15,7 @@ const Layout: React.FC = () => {
       <ServerName />
       <ChannelList />
       <UserInfo />
+      <ChannelInfo />
     </Grid>
   );
 };
